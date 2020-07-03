@@ -3,8 +3,8 @@ from gateway_app.requesters.authrequester import AuthRequester
 
 
 class OrdersRequester(Requester):
-    ORDERS_HOST = Requester.HOST + ':8002/'
-    #ORDERS_HOST = 'https://rsoi-online-store-orders.herokuapp.com/'
+    #ORDERS_HOST = Requester.HOST + ':8002/'
+    ORDERS_HOST = 'https://rsoi-online-store-orders.herokuapp.com/'
 
     def get_order(self, uuid, token=None):
         headers = {}
