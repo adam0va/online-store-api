@@ -1,0 +1,12 @@
+language: python
+pyhton:
+- '3.7'
+install:
+- pip install -r requirements.txt
+script:
+- python3 manage.py test
+deploy:
+  provider: heroku
+  app: rsoi-online-store-auth
+  api_key:
+    secure: dlnWEe3ltus4S2eYG/4oR2FnzQ7R925QIc0NHY5jJdzesUfcLWqDnX+fOLayD76OjE0jgp6y6704p74B6TNtdGzv5QDFoYa//d591iY3d8oq1tT+fn+piLF/K7vmgAmkytIX0bBU9QsfoBYAx2bUtF3hIL1EtoBNg60H15QB9yxJRdTXo9VIweiUK+VhS6rKwCpNM4Q77gifWFWVLCcsHQzUS2ISEtwhn2wakF5tvNxUx22K7oZZyccSxxnGGV/RSalfFFA8BcDR1A4cr2C2vh3jDMKWngS2iJvqzSY+77879Wh0LFa/YJY/odOscAluUJfz/MuXTVOBZFpC9zSo4QI9TASQnYB0FQqQFVNK/oygEiX21rk6dtV9obSuPqoXeLmzuzzYWs/x66mcSOrDeKUjUJ8BOdxN9TyPoO3R7iziFAdNrGmRE5WQGsB784ddLqm567b+Q1X2uRUA2w0lTWgdbQhkI0z9Uk+Bh8sxKFBDNpNrnXJQm+mPpnvYA12PW8nMPHkOcjeY54ixXAzICAFmCLtM/OPcYHeX0Bs501xlNaip4vCcpC94ROHqhsjM9AB/0XnT/JsXk21UVBHyRBj34uY3BzxaWUysGVytvozl7q7YloRnpu0O492Afp+vNtDxV/3l4/PB1totLhh7s8vv8as5zPu7NxbG4E8zpSs=
